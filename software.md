@@ -10,7 +10,7 @@ There are a few pieces of software to install:
 -   [tidyverse](https://www.tidyverse.org/): A bundle of R packages to
     use R the modern way.
 -   [lme4](https://cran.r-project.org/web/packages/lme4/index.html) for linear and generalized linear mixed effects models.
--   Other R packages.
+-   Other R packages that will provide extra utilities for working with multilevel models.
 
 ## Installing R
 
