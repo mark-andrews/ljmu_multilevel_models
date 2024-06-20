@@ -41,7 +41,7 @@ summary(M_3)
 coef(M_3) # coefficient for individual subjects
 ranef(M_3)
 
-confint(M_3)
+confint(M_3) # confidence intervals 
 
 # conditional and marginal R^2 
 r2_nakagawa(M_3)
@@ -49,7 +49,6 @@ r2_nakagawa(M_3)
 # random intercepts only
 M_4 <- lmer(Reaction ~ 1 + Days + (1 |Subject), data = sleep_df )
 
-confint()
 
 # random slopes only
 M_5 <- lmer(Reaction ~ 1 + Days + (0 + Days|Subject), data = sleep_df )
@@ -64,4 +63,4 @@ M_6a <- lmer(Reaction ~ 1 + Days + (Days||Subject) , data = sleep_df )
 
 summary(M_6)
 
-anova(M_3, M_4, M_5, M_6) # null hypothesis test comparing M_3 and M_6
+anova(M_3, M_6) # null hypothesis test comparing M_3 and M_6
