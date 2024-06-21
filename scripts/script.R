@@ -1,3 +1,8 @@
+# Some code that will be or could be used in the workshop
+# See script_day1_20_june.R and script_day2_21_june.R for 
+# which data set was actually used on day 1 and day 2, respectively.
+
+
 # Load packages -----------------------------------------------------------
 
 library(tidyverse)
